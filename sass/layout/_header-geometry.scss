@@ -1,0 +1,26 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-container {
+  @include centered-flex(flex, center, center);
+}
+
+@media screen and (min-width: 768px) {
+  .header-section {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

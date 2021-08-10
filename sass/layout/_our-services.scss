@@ -1,0 +1,44 @@
+.works {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .works-geometry {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__image {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+
+    &__description {
+      position: absolute;
+      @include centered-flex(flex, center, center);
+      width: 100%;
+      min-height: 70px;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &__name {
+      @include font(14px, 700);
+      line-height: 1.17;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+    }
+  }
+
+  .services-geometry {
+    margin-right: -30px;
+  }
+}

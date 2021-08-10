@@ -1,0 +1,84 @@
+.buttons-geometry {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  @include centered-flex(flex, center, flex-start);
+  flex-wrap: wrap;
+
+  &__content {
+    margin-right: 8px;
+
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__portfolio-button {
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    @include font(16px, 500);
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    color: var(--title-text-color);
+    background-color: #f5f4fa;
+
+    &:hover,
+    &:focus {
+      color: var(--primary-white-color);
+      background-color: var(--accent-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      transition: color var(--duration) var(--speed),
+        background-color var(--duration) var(--speed),
+        box-shadow var(--duration) var(--speed);
+    }
+    &--current {
+      color: var(--primary-white-color);
+      background-color: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 387px) and (max-width: 767px) {
+  .buttons__content:nth-child(2n + 2) {
+    margin-right: 8px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-geometry {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .buttons__content:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-geometry {
+    padding-top: 4px;
+    margin-bottom: 50px;
+  }
+}

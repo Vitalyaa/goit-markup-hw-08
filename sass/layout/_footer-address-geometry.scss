@@ -1,0 +1,44 @@
+.footer-contacts {
+  width: 100%;
+  text-align: center;
+}
+
+.contacts-geometry {
+  padding-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .address-networks-container {
+    display: flex;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .footer-contacts {
+    width: 232px;
+  }
+
+  .contacts-geometry {
+    margin-left: 0;
+    margin-right: 165px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-geometry {
+    margin-right: 70px;
+  }
+
+  .address-networks-container {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+
+  .footer-contacts {
+    text-align: start;
+  }
+}

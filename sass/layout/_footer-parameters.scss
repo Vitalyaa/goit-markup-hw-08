@@ -1,0 +1,24 @@
+.footer {
+  background-color: var(--footer-color);
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 60px 89px 60px 76px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    padding: 60px 0;
+  }
+}

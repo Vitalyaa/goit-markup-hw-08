@@ -1,0 +1,25 @@
+.networks {
+  @include centered-flex(flex, flex-start, center);
+  margin-left: 0;
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__link {
+    @include centered-flex(flex, center, center);
+    padding: 12px;
+    fill: var(--main-icon-color);
+    border-radius: 50%;
+    transition: fill var(--duration) var(--speed),
+      background-color var(--duration) var(--speed);
+
+    &:hover,
+    &:focus {
+      fill: var(--primary-white-color);
+      background-color: var(--accent-color);
+      transition: fill var(--duration) var(--speed),
+        background-color var(--duration) var(--speed);
+    }
+  }
+}
