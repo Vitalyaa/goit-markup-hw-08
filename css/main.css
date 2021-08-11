@@ -231,6 +231,7 @@ body {
   position: relative;
   padding-top: 48px;
   padding-left: 40px;
+  height: 100%;
 }
 
 .mobile-menu-container__close-button {
@@ -286,10 +287,16 @@ body {
   transition: color var(--duration) var(--speed);
 }
 
+.mobile-bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -56px;
+}
+
 .mobile-contacts {
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 64px;
+  margin-bottom: 45px;
 }
 
 .mobile-contacts__point:last-child {
@@ -315,7 +322,7 @@ body {
 
 .mobile-social-networks {
   display: flex;
-  padding-bottom: 48px;
+  padding-bottom: 55px;
 }
 
 .mobile-social-networks__item {
